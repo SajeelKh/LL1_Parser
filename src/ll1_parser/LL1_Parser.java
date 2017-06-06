@@ -107,6 +107,9 @@ public void algorithm    ()
 {
 error("this token is not corrent , By Grammer rule . Token : ("+token+")");
 }
+         else if(top.equals("$")){
+	        			break;
+	        	}
 else
 {
     System.out.println("Matching: Terminal :( "+token+" )");
@@ -118,10 +121,6 @@ token =read();
         else
         {
         error("Never Happens , Because top : ( "+top+" )");
-        }
-        if(token.equals("$"))
-        {
-        break;
         }
         //if top is terminal
     
